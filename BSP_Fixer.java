@@ -191,9 +191,9 @@ public class BSP_Fixer {
                                 break;
                             }
                         }
-                    }
+                    }     
                 }
-                  
+                targetList.clear();  
             }
             targetNameList.clear();
             /*----------------------------------------------------------------*/
@@ -317,6 +317,8 @@ public class BSP_Fixer {
                 }
             }
             countDeletedMessages = listTargetPrint.size() + listTargetSmallPrint.size();
+            listTargetPrint.clear();
+            listTargetSmallPrint.clear();
         }
 
         JOptionPane.showMessageDialog(null,getPanel(isFixedStartTimer, isFixedStopTimer, countDeletedMessages),
